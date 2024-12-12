@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color:  rgb(212, 212, 212);
+}
+
+.awal{
+    height: auto;
+}
+
+.branda{
+    max-width: 1000;
+    width: 100%;
+    height: auto;
+
+    & img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.pelayanan{
+    height: auto;
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    padding: 50px;
+
+    & h2{
+        padding: 30px;
+    }
+
+    & .contentpel{
+        margin: 10px;
+        width: 1300px;
+        border-radius: 10px;
+        height: 700px;
+        background-color: rgb(0, 140, 255);
+
+        & .tahap1{
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+
+            & .card {
+                width: 204px;
+                height: 280px;
+                background-color: white;
+                margin: 20px;
+                border-radius: 20px;
+
+                & .cardhead{
+                    padding: 15px;
+
+                    & button{
+                        background-color: rgb(23, 119, 10);
+                        color: white;
+                        max-width: 100px;
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 10px;
+                        border: none;
+
+                        &:hover{
+                            background-color:  rgb(29, 173, 10);
+                        }
+                        
+                    }
+                }
+
+                & .cardcontent{
+                    width: 100%;
+                    height: auto;
+                    padding: 15px 5px 5px 5px;
+
+                    & img{
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.berita{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+
+    & .beritacon{
+        margin: 30px 50px 30px 80px;
+        width: 900px;
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: 1680px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+
+        & .beritahed{
+            background-color: rgb(0, 140, 255);
+            border-radius: 10px 10px 0 0;
+            color: white;
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        /* berita */
+        & .beritalagi{
+            display: flex;
+            padding: 20px;
+            
+            & .fotoberita{
+                width: 350px;
+                height: auto;
+                border-radius: 10px;
+                overflow: hidden;
+
+                & img{
+                    width: 100%;
+                    height: auto;    
+                }
+            }
+            & .judulberita{
+                padding: 5px;
+                width: 480px;
+
+                & span{
+                    color: white;
+                    background-color: red;
+                    width: 100%;
+                    height: 20px;
+                    padding: 5px;
+                    border-radius: 10px;
+                    font-size: 1em;
+                    font-weight: 600;
+                    margin: 30px;
+                }
+
+                & h5{
+                    margin: 40px 0 0 30px;
+
+                    & strong a{
+                        text-decoration: none;
+                        font-size: 1.9em;
+                    }
+                }
+
+                & .tanggal{
+                    margin: 10px 0 10px 30px;
+                    color: rgb(61, 61, 61);
+                }
+
+                & .isiberita{
+                    width: 450px;
+                    height: 200px;
+                    margin: 0 0 0 30px;
+
+                    & .isi{
+                        width: 100%;
+                        font-size: 1.6em;
+                        color: rgb(61, 61, 61);
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 6;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+
+    & .sidef{
+        width: 450px;
+        height: auto;
+        
+
+        /* foto bupati */
+        & .fotobupati{
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+
+            & .bupatihead{
+                background-color: rgb(0, 140, 255);
+                border-radius: 10px 10px 0 0;
+                color: white;
+                padding: 20px;
+                font-size: 1em;
+            }
+
+            & img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & .pengumuman{
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+            
+
+            & .penghead{
+                background-color: rgb(0, 140, 255);
+                border-radius: 10px 10px 0 0;
+                color: white;
+                padding: 20px;
+                font-size: 1em;
+            }
+
+            /* pengumuman kanan */
+            & .pengcontent{
+                padding: 0 30px 50px 30px;
+
+                & .tanggaladmin{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2em;
+                    padding: 10px;
+                    & span{
+                        color: aqua;
+                    }
+                }
+
+                & .isipengumuman{
+                    font-size: 1.6em;
+                    margin: 10px;
+                    text-align: center;
+                }
+                & .lihat{
+                    background-color: aqua;
+                    border: none;
+                    width: 60px;
+                    height: auto;
+                    padding: 10px;
+                    border-radius: 5px;
+                    color: white;
+                    margin: 10px;
+                }
+            }
+
+        }
+
+        /* total pengunjung */
+        & .pengunjung{
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+
+            & .pengunjunghead{
+                background-color: rgb(0, 140, 255);
+                border-radius: 10px 10px 0 0;
+                color: white;
+                padding: 20px;
+                font-size: 1em;
+            }
+
+            & .pengunjunghariini{
+                text-align: center;
+                color: rgb(0, 167, 36);
+                padding: 40px;
+
+                & span{
+                    font-size: 5em;
+                    font-weight: bold;
+                    padding: 10px;
+                }
+
+                & p{
+                    font-size: 1.3em;
+                }
+            }
+
+            & .totalpengunjung{
+                text-align: center;
+                color: rgb(0, 140, 255);
+                padding: 40px;
+
+                & span{
+                    font-size: 5em;
+                    font-weight: bold;
+                    padding: 10px;
+                }
+
+                & p{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
+
+
+/* kotak untuk isi konten */
+.pagesejarah{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 60px;
+    padding: 60px;
+
+    /* konten */
+    & .sejarahcont{
+        width: 900px;
+        border-radius: 10px;
+        min-height: 1250px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 20px;
+
+        & .judul{
+            font-size: 2.5em;
+        }
+
+        & .fotoload{
+            width: 100%;
+            height: auto;
+
+            & img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & .judulberitalengkap{
+            font-size: 2.5em;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        & .gambarvisimisi{
+            width: 100%;
+            height: auto;
+
+            & img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & .maklumatbapenda{
+            width: 100%;
+            height: auto;
+
+            & img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & .maskotbapenda{
+            width: 80%;
+            height: auto;
+
+            & img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & p{
+            font-size: 1.3em;
+            color: rgb(32, 32, 32);
+            line-height: 1.8;
+        }
+    }
+
+    /* berita kecil dikanan */
+    & .beritakanan{
+        width: 400px;
+        height: auto;
+
+        & header{
+            font-size: 1.3em;
+            color: red;
+        }
+
+        & .beritakecil{
+            width: 100%;
+            height: auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+
+            
+
+            & .bungkus{
+                display: flex;
+                justify-content: space-between;
+
+                & .fotokecil{
+                    width: 90px;
+                    height: auto;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin: 10px;
+    
+                    & img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                & .namaberita{
+                    margin: 10px;
+                    width: 250px;
+                    
+                    & a{
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: black;
+                        cursor: pointer;
+                        font-size: 1em;
+
+                    }
+
+                    & .tanggalber{
+                        margin: 5px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+/* footer */
+footer{
+    background-color: rgb(0, 140, 255);
+    width: 100%;
+    height: auto;
+
+    & .contentfoot{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 100px 0 100px;
+        padding: 30px 0 30px 0;
+        color: white;
+
+        & .bapemda{
+            font-size: 1.2em;
+        }
+
+        & .ppp{
+            margin-top: 30px;
+            max-width: 900px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+
+            & .profil{
+                width: 300px;
+                font-size: 1em;
+
+                & ul{
+                    list-style-type: none;
+
+                    & li{
+                        padding: 7px 0 7px 0;
+
+                        & a{
+                            text-decoration: none;
+                            color: rgb(197, 248, 248);
+                        }
+                    }
+                }
+            }
+
+            & .informasi{
+                width: 250px;
+            }
+
+            & .kantor{
+                width: 300px;
+                font-size: 1em;
+
+                & ul{
+                    list-style-type: none;
+
+                    & li{
+                        padding: 7px 0 7px 0;
+
+                        & span{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .copyright{
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        color: white;
+    }
+}

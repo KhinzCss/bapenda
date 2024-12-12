@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.listberita{
+    text-align: center;
+    padding: 60px;
+
+    & h1{
+        padding: 50px;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    overflow: hidden; 
+    max-height: 660px; 
+    transition: max-height 0.3s ease;
+    text-align: start;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.card-container.expanded {
+    max-height: none;
+}
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+}
+.card-content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+.card-content p {
+    margin: 10px 0 0;
+    color: #666;
+}
+

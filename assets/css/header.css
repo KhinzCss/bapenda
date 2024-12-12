@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.atas{
+    background-color: rgb(0, 140, 255);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky; /* Tambahkan posisi sticky */
+    top: 0; /* Tetap di bagian atas halaman saat digeser */
+    z-index: 1; /* Pastikan elemen ini di atas elemen lainnya */
+
+    & .atas1{
+        color: white;
+        font-style: italic;
+        font-size: 1em;
+        margin: 0 0 0 50px;
+        & a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    position: sticky; /* Ubah posisi menjadi sticky */
+    top: 0; /* Header akan tetap di bawah elemen .atas */
+    z-index: 2; /* Pastikan elemen ini di bawah .atas */
+
+    & .contenthed{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 60px 0 60px;
+
+        & .logo{
+            
+            margin-left: 90px;
+        
+
+            & img{
+                width: 170px;
+            }
+        }
+        & .navbar{
+
+            max-width: 950px;
+            width: 100%;
+            background-color: white;
+
+            & ul{
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                
+
+                & .dropdown:hover .dropdown-content {
+                    visibility: visible;
+                    opacity: 1; /* Tampilkan dropdown */
+                    transform: translateY(0); /* Posisikan di tempat semula */
+                }
+                
+                & li{
+                    padding: 10px 20px;
+                    font-size: 1em;
+                    display: inline-block;
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    & .dropdown-content {
+                            visibility: hidden;
+                            position: absolute;
+                            background-color: #ffffff;
+                            width: auto;
+                            white-space: nowrap;
+                            padding: 15px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 1;
+                            margin: 10px;
+                            opacity: 0; /* Awal tidak terlihat */
+                            transform: translateY(10px); /* Muncul dari bawah */
+                            transition: all 0.3s ease; /* Durasi animasi */
+                        
+                            & a {
+                                width: 100%;
+                                float: none;
+                                color: black;
+                                padding: 12px 16px;
+                                text-decoration: none;
+                                display: block;
+                                text-align: left;
+                            }
+
+                            & .dropdown:hover .dropdown-content2,
+                            & .dropdown:hover .dropdown-content3 {
+                                visibility: visible;
+                                opacity: 1; /* Tampilkan dropdown */
+                                transform: translateX(0); /* Posisikan di tempat semula */
+                            }
+
+
+                            & .dropdown .dropdown-content2, & .dropdown-content3{
+                                visibility: hidden;
+                                position: absolute;
+                                background-color: #ffffff;
+                                width: auto;
+                                white-space: nowrap;
+                                padding: 15px;
+                                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                z-index: 1;   
+                                margin: 5px;
+                                margin-left: 120px;
+                                opacity: 0; /* Awal tidak terlihat */
+                                transform: translateX(-10px); /* Muncul dari bawah */
+                                transition: all 0.3s ease; /* Durasi animasi */
+                            }
+                    }
+                      
+
+                    
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 3px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: red;
+                        transition: transform 0.25s ease-out;
+                    }
+
+                    &:hover::after{
+                        transform: scaleX(1);
+                    }
+
+                    &::after{
+                        transform-origin: bottom right;
+                    }
+
+                    &:hover::after{
+                        transform-origin: bottom left;
+                    }
+
+                    & a:hover{
+                        color: red;
+                    }
+
+
+                    & a{
+                        text-decoration: none;
+                        color: black;
+                        transition: ease-in-out .4s;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    display: block; /* Default hanya tampil jika ada data */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
